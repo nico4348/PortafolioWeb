@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/01.js"></script>
+    <link rel="stylesheet" href="/css/01.css">
+    <link rel="stylesheet" href="../../../css/cssGlobal.css">
+</head>
+<body>
+
+    <header class="container1">
+        <ul class="ulHeader1">
+            <li>
+                <ul class="container1">
+                    <li><img class="logoMio1" src="../../../img/Logo.svg" alt="Logo de Kofi"></li>
+                    <li><span>Nicolás Ordoñez</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../../html/index.html">
+                    <button class="modoDia1">
+                        Volver
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+
+    
+    <p class="pTitulo">Ingrese su edad</p>
+    <div class="fContainer">
+        <input class="input" type="number" id="textoEdad">
+        <button onclick="calcular()">Enviar</button>
+    </div>
+    <div class="hPreguntas">
+        <h3>¿Puede beber alcohol?</h3>
+        <p id="respuesta1"></p>
+        <h3>¿Puede entrar a la fiesta?</h3>
+        <p id="respuesta2"></p>
+        <h3>¿Tiene entrada gratis?</h3>
+        <p id="respuesta3"></p>
+
+        <p class="pPrecio">¿Cúal es el precio de la leche?</p>
+    <div class="container">
+        <input class="input" type="number" id="textoPrecio">
+        <button onclick="evaluarCompra()">Enviar</button>
+        <h3 id="desicion"></h3>
+    </div>
+
+    <p class="pPrecio">¿Cúal es el precio de la leche?</p>
+    <div class="container">
+        <input class="input" type="number" id="textoPrecio1">
+        <button onclick="evaluarCompra1()">Enviar</button>
+        <h3 id="desicion1"></h3>
+    </div>
+
+    <ol>
+        <li>1 Manzana</li>
+        <li>2 Najanja</li>
+        <li>3 Piña</li>
+        <li>4 Durazno</li>
+        <li>5 Pera</li>
+        <li>6 Banano</li>
+    </ol>
+    <input class="input" type="number" id="numeroFruta" min="1" max="6">
+    <button onclick="consultarPrecio()">Precio</button>
+    <h3 id="textoPrecio2"></h3>
+</body>
+</html>

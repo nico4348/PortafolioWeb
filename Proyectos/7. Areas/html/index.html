@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../../css/cssGlobal.css">
+
+</head>
+<body>
+
+    <header class="container1">
+        <ul class="ulHeader1">
+            <li>
+                <ul class="container1">
+                    <li><img class="logoMio1" src="../../../img/Logo.svg" alt="Logo de Kofi"></li>
+                    <li><span>Nicolás Ordoñez</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../../html/index.html">
+                    <button class="modoDia1">
+                        Volver
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+
+    <div class="contGeneral">
+        <section class="cuadrado">
+            <h1>Cuadrado</h1>
+            <img class="figurita" src="../img/Cuadrado.svg" width="50px" alt="" srcset="">
+            <input class="input" type="number" placeholder="Lado cuadrado" id="ladoCuadrado"/> 
+
+            <button onclick="calcCuadrado()">Resolver</button>
+
+            <div id="resCuadrado"></div>
+            <div id="resCuadrado1"></div>
+
+        </section>
+        
+
+        <section class="trianguloEq">
+            <h1>Triangulo Equilatero</h1>
+            <img class="figurita" src="../img/Triangulo.svg" width="50px" alt="" srcset="">
+            <input class="input" type="number" placeholder="Lado Triangulo Equilatero" id="ladoTriangulo"/> 
+            
+            <button onclick="calcTriangulo()">Resolver</button>
+
+            <div id="resTriangulo"></div>
+            <div id="resTriangulo1"></div>
+        </section>
+
+
+        <section class="circulo">
+            <h1>Circulo</h1>
+            <img class="figurita" src="../img/Circulo.svg" width="50px" alt="" srcset="">
+            <input class="input" type="number" placeholder="Radio Circulo" id="radioCirculo"/> 
+            
+            <button onclick="calcCirculo()">Resolver</button>
+
+            <div id="resCirculo"></div>
+            <div id="resCirculo1"></div>
+        
+        </section>
+
+        
+        <section class="ovalo">
+            <h1>Ovalo</h1>
+            <img class="figurita" src="../img/Ovalo.svg" width="50px" alt="" srcset="">
+            <input class="input" type="number" placeholder="Radio A" id="radioA"/> 
+            <input class="input" type="number" placeholder="Radio B" id="radioB"/> 
+            
+            <button onclick="calcOvalo()">Resolver</button>
+
+            <div id="resOvalo"></div>
+            <div id="resOvalo1"></div>
+        </section>
+
+        
+        <section class="pentagono">
+            <h1>Pentagono</h1>
+            <img class="figurita" src="../img/Pentagono.svg" width="50px" alt="" srcset="">
+            <input class="input" type="number" placeholder="Lado Pentagono" id="ladoPentagono"/> 
+            <input class="input" type="number" placeholder="Distacia del Centro" id="distCentro"/> 
+            
+            <button onclick="calcPentagono()">Resolver</button>
+
+            <div id="resPentagono"></div>
+            <div id="resPentagono1"></div>
+        
+        </section>
+
+        
+        <section class="trapecio">
+            <h1>Trapecio</h1>
+            <img class="figurita" src="../img/Trapecio.svg" width="50px" alt="" srcset="">
+            <input class="input" type="number" placeholder="Base Pequeña" id="baseA"/> 
+            <input class="input" type="number" placeholder="Base Grande" id="baseB"/> 
+            <input class="input" type="number" placeholder="Altura" id="alturaT"/> 
+            
+            <button onclick="calcTrapecio()">Resolver</button>
+
+            <div id="resTrapecio"></div>
+            <div id="resTrapecio1"></div>
+        
+        </section>
+    </div>
+
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

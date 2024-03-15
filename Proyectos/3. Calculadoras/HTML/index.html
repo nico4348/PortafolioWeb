@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular combustible</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="../JS/app.js"></script>
+    <link rel="stylesheet" href="../../../css/cssGlobal.css">
+</head>
+<body>
+    <header class="container1">
+        <ul class="ulHeader1">
+            <li>
+                <ul class="container1">
+                    <li><img class="logoMio1" src="../../../img/Logo.svg" alt="Logo de Kofi"></li>
+                    <li><span>Nicolás Ordoñez</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../../html/index.html">
+                    <button class="modoDia1">
+                        Volver
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <h1>&#9981; Calcular combustible</h1>
+    <p>Calcular cúantos litros vas a necesitar</p>
+    <p>Kilómetros: <input class="input" type="number" id="textoKm" value="0" min="0"></p>
+    <p><button onclick="calcularLitros()">Calcular combustible</button></p>
+    <p id="textoResultado"></p>
+    
+
+    <h1>
+        Número aleatorio
+        <span id="textoAleatorio"></span>
+    </h1>
+    <p>
+        <input class="input" type="number" placeholder="Máximo" id="Maximo">
+    </p>
+    <p>
+        <input class="input" type="number" placeholder="Mínimo" id="Minimo">
+    </p>
+    <p>
+        <button onclick="crearAleatorio()">Dar número</button>
+    </p>    
+    <h2>
+        Su número aleatorio: 
+        <span id="textoAleatorio2"></span>
+    </h2>
+    
+
+    <h1>CALCULADORA</h1>
+    <p>
+        <input class="input" type="number" placeholder="Número 1" id="numero1">
+    </p>
+    <p>
+        <input class="input" type="number" placeholder="Número 2" id="numero2">
+    </p> 
+    <p>
+        <button class ="btn" onclick="calculaSuma()">+</button>
+        <button class ="btn" onclick="calculaResta()">-</button>
+        <button class ="btn" onclick="calcularMulti()">*</button>
+        <button class ="btn" onclick="calcularDividir()">/</button>
+    </p>
+    <p>
+        <button class ="btnlarge" onclick="calcularPotencia()">Potencia</button>
+        <button class ="btnlarge" onclick="calcularRaiz()">Raiz</button>
+    </p>
+    <p>
+        <button class ="btnlarge" onclick="calcularAbsoluto()">Absoluto</button>
+        <button class ="btnlarge" onclick="calcularAleatorio()">Aleatorio</button>
+    </p>
+    <p>
+        <button class ="btnmedium" onclick="calcularRedondeado()">Round</button>
+        <button class ="btnmedium" onclick="calcularArriba()">Ceil</button>
+        <button class ="btnmedium" onclick="calcularAbajo()">Floor</button>
+
+    </p>
+    <p>
+        Su resultado:
+        <input class="input" type="number" id="resultado" disabled></span>
+    </p>
+</body>
+</html>

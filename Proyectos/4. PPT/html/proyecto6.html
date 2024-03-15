@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel, tijera</title>
+    <link rel="stylesheet" href="../../../css/cssGlobal.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+</head>
+<body>
+    <header class="container1">
+        <ul class="ulHeader1">
+            <li>
+                <ul class="container1">
+                    <li><img class="logoMio1" src="../../../img/Logo.svg" alt="Logo de Kofi"></li>
+                    <li><span>Nicolás Ordoñez</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../../html/index.html">
+                    <button class="modoDia1">
+                        Volver
+                    </button>
+                </a>
+            </li>
+        </ul>
+        
+    </header>
+   
+    
+    <section id="game-zone">
+        <figure>
+            <img src="../images/paper.png" alt="Elección jugador" id="playerChoice">
+            <figcaption>Jugador</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/paper.png" alt="Elección computadora" id="computadoraChoice">
+            <figcaption>Computadora</figcaption>            
+        </figure>
+    </section>
+    <p id="resultado">Comienza el <strong>juego</strong></p>
+    <p id="score">Comienza el <strong>juego</strong></p>
+    <section class="container">
+        <p id="opcion">Escoge una opción</p>
+        <button class="btn" data-choice="piedra">
+            <img src="../images/rock.png" alt="rock" class="imageeen">
+        </button>
+        <button class="btn" data-choice="papel">
+            <img src="../images/paper.png" alt="paper" class="imageeen">
+        </button>
+        <button class="btn" data-choice="tijera" >
+            <img src="../images/scissors.png" alt="scissors" class="imageeen">
+        </button>
+    </section>
+    <section class="container">
+        <a id="reinicio">Reinicio</a>
+    </section>
+    <script src="../js/proyecto6.js"></script>
+</body>
+</html>

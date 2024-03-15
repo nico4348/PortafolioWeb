@@ -1,0 +1,150 @@
+body{
+    text-align: center;
+}
+@media only screen and (min-width: 500px) {
+    #game-zone{
+        background-color: #76ABAE;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 50px;
+        height: 200px;body{
+    text-align: center;
+    color: white;
+    background-color: #76ABAE;
+    font-size: 1.2rem;
+}
+@media only screen and (min-width: 500px) {
+    #game-zone{
+        background-color: #76ABAE;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 50px;
+        height: 200px;
+    }
+    .escogerOpcion{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 50px;
+    }
+    .btn{
+        border-radius: 50%;
+        cursor: pointer;
+        width: 140px;
+    }
+}
+@media only screen and (min-width: 100px) {
+    #game-zone{
+        background-color: #76ABAE;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        border-radius: 50px;
+    }
+    .escogerOpcion{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        border-radius: 50px;
+    }
+    .btn{
+        border-radius: 50%;
+        cursor: pointer;
+        width: 140px;
+        width: 140px !important;
+        
+    }
+}
+#game-zone{
+    background-color: #76ABAE;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 50px;
+    
+}
+
+#resultado{
+    background-color: #76ABAE;
+    padding: 1em;
+    border-radius: 50px;
+}
+#score{
+    background-color: #76ABAE;
+    padding: 1em;
+    border-radius: 50px;
+}
+#opcion{
+    color: black;
+}
+
+.btn:hover{
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+}
+#reinicio{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    background-color: #76ABAE;
+}
+.container{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #76ABAE;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+    }
+}
+@media only screen and (min-width: 100px) {
+    #game-zone{
+        background-color: #76ABAE;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        border-radius: 50px;
+    }
+}
+
+#resultado{
+    background-color: #76ABAE;
+    padding: 1em;
+    border-radius: 50px;
+}
+#score{
+    background-color: #76ABAE;
+    padding: 1em;
+    border-radius: 50px;
+}
+#opcion{
+    color: black;
+}
+.imageeen{
+    transform: translateX(-15px);
+}
+.btn{
+    border-radius: 50%;
+    cursor: pointer;
+    width: 140px !important;
+    margin: 0px;
+}
+.btn:hover{
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+}
+#reinicio{
+    
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+}
+.container{
+    background-color: #76ABAE;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+}

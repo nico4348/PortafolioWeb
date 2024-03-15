@@ -1,0 +1,89 @@
+body {
+    background-color: #222831;
+    font-family:'Courier New', Courier, monospace;
+    width: 768px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    color: #EEEEEE;
+    transition: width 0.5s, height 3s;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+}
+
+button{
+    font-family:'Courier New', Courier, monospace;
+    color: #EEEEEE;
+}
+
+button {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: #75d6db;
+    border-radius: 4px;
+   }
+   
+   button:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, #75d6db 0%, #add5d6 100%);
+   }
+   
+   button:active {
+    transform: translate(0em, 0.2em);
+   }
+
+
+   .container1 {
+    height: 72px;
+    width: 100%; /* Ancho del header al 100% del viewport */
+    max-width: 768px; /* Ancho máximo del header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top 0.3s ease; /* Aplicar transición solo a la propiedad top */
+    background-color: #222831;
+    position: relative;
+}
+
+.ulHeader1 {
+    width: 90%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.logoMio1, .iconDia1 {
+    cursor: pointer;
+    background: none;
+    display: flex;
+    height: 35px;
+}
+
+.modoDia1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #EEEEEE;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+.input {
+    color: #EEEEEE;
+    border: 2px solid #76ABAE;
+    border-radius: 10px;
+    padding: 12px 20px;
+    background: transparent;
+    max-width: 190px;
+   }

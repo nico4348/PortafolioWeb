@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../CSS/stylesweb.css">
+    <script src="../JS/appweb.js"></script>
+    <link rel="stylesheet" href="../../../css/cssGlobal.css">
+</head>
+<body>
+
+    <header class="container1">
+        <ul class="ulHeader1">
+            <li>
+                <ul class="container1">
+                    <li><img class="logoMio1" src="../../../img/Logo.svg" alt="Logo de Kofi"></li>
+                    <li><span>Nicolás Ordoñez</span></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../../html/index.html">
+                    <button class="modoDia1">
+                        Volver
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+
+
+    <h1 id="Formulario">Formulario</h1>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="fName" class="labelform">Primer nombre</label></td>                
+                    <td><input type="text" id="fName" class="input" placeholder="Escriba su primer nombre..." required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="SName" class="labelform">Segundo nombre</label></td>                
+                    <td><input type="text" id="SName"  class="input"placeholder="Escriba su segundo nombre..." required></td>
+                </tr>
+                <tr>
+                    <td><label for="fLastName" class="labelform">Primer apellido</label></td>                
+                    <td><input type="text" id="fLastName" class="input" placeholder="Escriba su primer apellido..." required></td>
+                </tr>
+                <tr>
+                    <td><label for="SLastName" class="labelform">Segundo apellido</label></td>                
+                    <td><input type="text" id="SLastName" class="input" placeholder="Escriba su segundo apellido..." required></td>
+                </tr>
+                <tr>
+                    <td><label for="fEdad" class="labelform">Edad</label></td>                
+                    <td><input type="number" id="fEdad" class="input" placeholder="Escriba su edad..."></td>
+                </tr>
+                <tr>
+                    <td><label for="fDate" class="labelform">Fecha de nacimiento</label></td>                
+                    <td><input type="date" id="fDate" class="input" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fPhone" class="labelform">Teléfono</label></td>                
+                    <td><input type="number" id="fPhoner" class="input" placeholder="Escriba su número de telefono"></td>
+                </tr>
+                <tr>
+                    <td><label for="fEmail" class="labelform">Correo</label></td>                
+                    <td><input type="email" id="fEmail" class="input" placeholder="Escriba su email..." required></td>
+                </tr>
+                <tr>
+                    <td><label for="fDireccion" class="labelform">Dirección</label></td>                
+                    <td><input type="text" id="fDireccion" class="input" placeholder="Escriba su dirección..." required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="enviar()" id="btnEnviar">Enviar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form> 
+</body>
+</html>

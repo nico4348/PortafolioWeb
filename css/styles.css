@@ -1,0 +1,305 @@
+body {
+    
+    background-color: #222831;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    width: 768px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    color: #EEEEEE;
+    transition: width 0.5s, height 3s;
+}
+button{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color: #EEEEEE;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+}
+
+.container, .scrolled {
+    height: 72px;
+    width: 100%; /* Ancho del header al 100% del viewport */
+    max-width: 768px; /* Ancho máximo del header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top 0.3s ease; /* Aplicar transición solo a la propiedad top */
+}
+
+.container {
+    background-color: #222831;
+    position: relative;
+    
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Ancho del header al 100% del viewport */
+    max-width: 768px; /* Ancho máximo del header */
+    z-index: 999;
+    background-color: rgba(29, 40, 54, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+#myName{
+    transform: translateX(-60px);
+}
+.ulHeader {
+    width: 90%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+
+.logoMio, .iconDia {
+    cursor: pointer;
+    background: none;
+    display: flex;
+    height: 35px;
+}
+
+.pagina{
+    background-color: #222831;
+    padding: 20px;
+}
+
+.sectionPresentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 70px;
+}
+
+.presentacion{
+    
+    gap: 25px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.contPresentaciones{
+    margin: 0 10px; /* Ajusta el margen entre los elementos li */
+    flex: 0 1 auto; /* Hace que los elementos li sean flexibles */
+}
+.liheader{
+    margin-left: 50px ;
+}
+.fotoMia {
+    max-width: 100%;
+    width: 200px;
+    height: auto; /* Esto garantiza que la altura se ajuste automáticamente */
+    border-radius: 50%;
+    margin: 0 auto;   
+    border: 8px solid #31363F;
+}
+
+a {
+    text-decoration: none; /* Elimina la línea subrayada */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+}
+a:hover{
+    color: #76ABAE;
+}
+
+.contDerInfo{
+    padding: 20px;
+}
+
+.contBotonesPresentacion{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    justify-content:left;
+    gap: 10px;
+}
+
+
+
+
+article {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.card {
+    position: relative; /* Asegura que la posición absoluta de .moon se base en .card */
+    /* Otros estilos para .card si es necesario */
+    height: 200px;
+    width: 350px;
+    background: rgb(17, 4, 134);
+    border-radius: 1rem;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+
+    margin-bottom: 20px;
+  }
+  
+.card:hover {
+    font-size: 23px;
+    box-shadow: rgb(0, 0, 0) 2px 2px 10px, rgb(0, 0, 0) -2px 0px 10px;
+}
+  
+  .moon {
+    width: 0.7em;
+    height: 0.7em;
+    font-size: 0; /* Tamaño inicial en 0 */
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: all 0.2s ease-in-out;
+}
+  
+.card:hover > .moon {
+    font-size: 23px;
+}
+  
+
+.contProyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Columnas de tamaño mínimo 300px y que se expanden para llenar el espacio disponible */
+    gap: 20px; /* Espacio entre los elementos */
+    row-gap: 0px;
+}
+
+.artProyectos{
+    width: 350px;
+}
+.divProyectos{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+
+
+.card1 {
+    width: 350px;
+    border-radius: 20px;
+    background: #EEEEEE;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #EEEEEE;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details1 {
+    color: #31363F;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button1 {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #76ABAE;
+    color: #EEEEEE;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body1 {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title1 {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card1:hover {
+    border-color: #76ABAE;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card1:hover .card-button1 {
+    cursor: pointer;
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+
+.genericButton {
+    position: relative; /* Asegura que el posicionamiento absoluto sea relativo al botón */
+    padding: 20px;
+    background-color: #222831;
+    width: 8.6em;
+    height: 2.9em;
+    border: #76ABAE 0.2em solid;
+    border-radius: 11px;
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    transition: all 0.6s ease;
+}
+
+.genericButton:hover {
+  background-color: #76ABAE;
+  color: #EEEEEE;
+  cursor: pointer;
+}
+
+.genericButton svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.genericButton:hover svg {
+  transform: translateX(5px);
+}
+
+.imgCopy {
+    position: absolute; /* Posiciona el icono de forma absoluta dentro del botón */
+    left: 10px; /* Ajusta la posición horizontal del icono según sea necesario */
+    top: 50%; /* Ajusta la posición vertical del icono según sea necesario */
+    transform: translateY(-50%); /* Centra verticalmente el icono dentro del botón */
+    width: 24px; /* Establece el ancho del icono según sea necesario */
+}
+
+.text {
+    padding-left: 28px; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.input {
+    color: #EEEEEE;
+    border: 2px solid #76ABAE;
+    border-radius: 10px;
+    padding: 12px 20px;
+    background: transparent;
+    max-width: 190px;
+   }
